@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+    <script>
+        var numeros = [];
+        for (var i = 0; i < 20; i++) {
+            var numero = parseInt(prompt("Escreva o seu número:"));
+            if (i === 0) {
+                maior = menor = numero;
+            } else {
+                if (numero > maior) maior = numero;
+                if (numero < menor) menor = numero;
+            }
+        }
+        alert("Seu maior número foi:" + maior);
+        alert("Seu menor número foi:" + menor);
+
+        function gerarElerImpares() {
+            let impares = [];
+
+            for (let numero = 151; numero <= 300; numero += 2) {
+                impares.push(numero);
+            }
+
+            for (let i = 0; i < impares.length; i++) {
+                console.log(impares[i]);
+            }
+        }
+
+        gerarElerImpares();
+
+    </script>
+</body>
+
+</html>
